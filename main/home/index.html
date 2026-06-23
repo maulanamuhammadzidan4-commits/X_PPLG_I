@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pengunjung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>      
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="#struktur"><i class="fa-solid fa-sitemap"></i> Structure</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropdown-btn"><i class="fa-solid fa-bars" id="dropdown-icon"></i> Content</button>
+                    <div id="myDropDown" class="dropdown-content">
+                        <a href="#struktur">Struktur</a>
+                        <a href="#siswa-container">Daftar Siswa</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#rangkuman">Rangkuman</a>
+                        <a href="#informasi-section">Informasi</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#author"><i class="fa-solid fa-user-gear"></i> Author</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <section class="home-section">
+                <div class="logo" id="home">
+                    <img src="../assets/logo-jurusan.png" alt="logo-kelas" class="jurusan">
+                    <img src="../assets/logo-kelas.jpeg" alt="logo-jurusan" class="kelas">
+                </div>
+                <div class="judul">
+                    <h1>SELAMAT DATANG</h1>
+                    <h3>Website X PPLG 1</h3>
+                </div>
+        </section>
+
+        <section class="about-section">
+            <div id="about">
+                <h1>about</h1>
+            </div>
+        </section>
+    </div>
+
+    <div id="container">
+        <section class="struktur-section">
+            <div id="struktur">
+                <h1>struktur</h1>
+            </div>
+        </section>
+
+        <section class="siswa-section">
+            <div id="siswa-container">
+                
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div id="gallery">
+                <h1>gallery</h1>
+            </div>
+        </section>
+
+        <section class="rangkuman-section">
+            <div id="rangkuman"></div>
+        </section>
+
+        <section id="informasi-section">
+            <div id="absensi">
+
+            </div>
+            <div id="piket">
+
+            </div>
+            <div id="kas">
+
+            </div>
+        </section>
+
+        <section class="author-section">
+            <div id="author">
+                <div id="mmzbe">
+
+                </div>
+                <div id="fzfe">
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; M. Zidan Maulana, Muhammad Fazril 2026</p>
+        <div class="ig">
+            <a href=""><i class="fa-brands fa-instagram"></i> | Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

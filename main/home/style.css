@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*Navbar*/
+.navbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 85%;
+    margin-left: 100px;
+    display: flex;
+    background: white;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 45px;
+    justify-content: space-around;
+    z-index: 9999;
+    padding: 15px 0;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 150px;
+}
+.nav-links li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.home-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 90px;
+    background-color: rgb(85, 85, 85);
+    padding: 20px;
+    padding-top: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.judul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-right: 45px;
+    padding-top: 20px;
+    text-align: center;
+}
+.logo img{
+    width: auto;
+    height: 60px;
+    border-radius: 45px;
+    object-fit: contain;
+}
+.logo .jurusan {
+    height: 80px;
+    border-radius: 45px;
+}
+
+section{
+    display: block;
+    flex-direction: column;
+    padding: 50% 0;
+    text-align: center;
+}
+
+/* --- Tambahan untuk Dropdown --- */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Menyamakan style tombol Content dengan link lainnya */
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Gaya Box Kotak Dropdown */
+.dropdown-content {
+    display: none; /* Sembunyi secara default */
+    position: absolute;
+    bottom: 140%; /* Muncul di ATAS tombol karena posisi navbarmu ada di bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Agar posisi box pas di tengah tombol */
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+/* Gaya Link di dalam Box */
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Efek Hover di dalam Box Dropdown */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#dropdown-icon{
+    transition: transform 0.5s ease;
+display: inline-block;
+margin-right: 5px;
+}
+
+.muter{
+transform: rotate(90deg);
+}
+/* Kelas khusus yang akan dipicu oleh JavaScript */
+.show {
+    display: block !important;
+}
