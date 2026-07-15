@@ -1,12 +1,13 @@
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
 const mysql = require('mysql2');
 
 // Membuat pool koneksi agar lebih efisien dan tidak mudah terputus
 const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: '', // Sesuaikan dengan password mysql lokal Anda
-    database: 'db_kelas' // Sesuaikan dengan nama database yang akan Anda buat di phpMyAdmin/MySQL CLI
-});
+    host : process.env.DB_HOST,
+    user : process.env.DB_USER,
+    password : process.env.DB_PASSWORD,
+    database : process.env.DB_NAME
+})
 
 // Mengubah pool menjadi promise agar bisa menggunakan async/await yang elegan
 const db = pool.promise();

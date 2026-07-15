@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Pengunjung</title>
+    <title>PPLG 1</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
@@ -12,12 +12,11 @@
         <ul class="nav-links">
             <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
             <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
-            <li><a href="#struktur"><i class="fa-solid fa-sitemap"></i> Structure</a></li>
             <li>
                 <div class="dropdown">
                     <button onclick="toggleDropdown()" class="dropdown-btn"><i class="fa-solid fa-bars" id="dropdown-icon"></i> Content</button>
                     <div id="myDropDown" class="dropdown-content">
-                        <a href="#struktur">Struktur</a>
+                        <a href="#struktur"><i class="fa-solid fa-sitemap"></i> Struktur</a>
                         <a href="#siswa-container">Daftar Siswa</a>
                         <a href="#gallery">Gallery</a>
                         <a href="#rangkuman">Rangkuman</a>
@@ -30,8 +29,8 @@
     </nav>
 
     <div class="hero">
-        <section class="home-section">
-                <div class="logo" id="home">
+        <section class="home-section" id="home">
+                <div class="logo">
                     <img src="../assets/logo-jurusan.png" alt="logo-kelas" class="jurusan">
                     <img src="../assets/logo-kelas.jpeg" alt="logo-jurusan" class="kelas">
                 </div>
@@ -39,11 +38,15 @@
                     <h1>SELAMAT DATANG</h1>
                     <h3>Website X PPLG 1</h3>
                 </div>
+                <div class="introduction"> <!--Benerin nanti posisinya-->
+                    <p>Ini bagian untuk menjelaskan tujuan dibuatnya web kelas ini.</p>
+                </div>
         </section>
 
         <section class="about-section">
             <div id="about">
-                <h1>about</h1>
+                <h2>about</h2>
+                <p>Description</p>
             </div>
         </section>
     </div>
@@ -51,7 +54,7 @@
     <div id="container">
         <section class="struktur-section">
             <div id="struktur">
-                <h1>struktur</h1>
+                <h2>struktur</h2>
             </div>
         </section>
 
@@ -63,7 +66,7 @@
 
         <section class="gallery-section">
             <div id="gallery">
-                <h1>gallery</h1>
+                <h2>gallery</h2>
             </div>
         </section>
 
@@ -98,7 +101,7 @@
     <footer>
         <p>&copy; M. Zidan Maulana, Muhammad Fazril 2026</p>
         <div class="ig">
-            <a href=""><i class="fa-brands fa-instagram"></i> | Instagram</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> | Instagram</a>
         </div>
     </footer>
 

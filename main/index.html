@@ -6,150 +6,148 @@
     <title>X PPLG 1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <style>
-        * {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-:root{
-    --form-color:#0d0a21;
-    --bg-color: linear-gradient(120deg, black, rgb(10, 10, 51), black);
-}
-body {
-    background: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-container {
-    background: var(--form-color);
-    padding: 30px;
-    border-radius: 15px;
-    border: 1px solid #211956;
-    box-shadow: 0 0 20px black;
-    box-shadow: 0 0 20px #020135;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-h2{
-    margin-bottom: 24px;
-    color: rgb(182, 178, 178);
-    font-size: 3 rem;
-    text-shadow: 0 0 1px rgb(0, 110, 255);
-    animation: glow 3s infinite;
-}
-
-@keyframes glow{
-    0%, 100%{
-        text-shadow: 0;
-        color: #007bff;
     }
-    50%{
-        text-shadow: 0 0 20px #007bff;
+
+    :root{
+        --form-color:#0d0a21;
+        --bg-color: linear-gradient(120deg, black, rgb(10, 10, 51), black);
+    }
+    body {
+        background: var(--bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .login-container {
+        background: var(--form-color);
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid #211956;
+        box-shadow: 0 0 20px black;
+        box-shadow: 0 0 20px #020135;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    h2{
+        margin-bottom: 24px;
+        color: rgb(182, 178, 178);
+        font-size: 3 rem;
+        text-shadow: 0 0 1px rgb(0, 110, 255);
+        animation: glow 3s infinite;
+    }
+
+    @keyframes glow{
+        0%, 100%{
+            text-shadow: 0;
+            color: #007bff;
+        }
+        50%{
+            text-shadow: 0 0 20px #007bff;
+            color: white;
+        }
+    }
+    .input-group {
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 6px;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #211956;
+        background-color: #090f17;
+        color: grey;
+        border-radius: 10px;
+        font-size: 14px;
+        outline: none;
+    }
+
+    .input-group input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px #0112ff;
+    }
+
+    .btn-login {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(to right, #0112ff, #0066ff);
+        border: none;
+        border-radius: 15px;
         color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s;
     }
-}
-.input-group {
-    margin-bottom: 16px;
-    text-align: left;
-}
 
-.input-group label {
-    display: block;
-    margin-bottom: 6px;
-    color: #ffffff;
-    font-size: 14px;
-}
+    .btn-login:hover{
+        background: linear-gradient(to left, #0112ff, #0066ff);
+        text-shadow: 0 0 5px white;
+        box-shadow: 0 0 15px #0112ff;
+        transform: scale(1.01);
+    }
 
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #211956;
-    background-color: #090f17;
-    color: grey;
-    border-radius: 10px;
-    font-size: 14px;
-    outline: none;
-}
+    .divider {
+        margin: 20px 0;
+        position: relative;
+    }
 
-.input-group input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px #0112ff;
-}
+    .divider::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #525252;
+        z-index: 1;
+    }
 
-.btn-login {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(to right, #0112ff, #0066ff);
-    border: none;
-    border-radius: 15px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s;
-}
+    .divider span {
+        background: var(--form-color);
+        padding: 0 10px;
+        color: #525252;
+        font-size: 14px;
+        position: relative;
+        z-index: 2;
+    }
 
-.btn-login:hover{
-    background: linear-gradient(to left, #0112ff, #0066ff);
-    text-shadow: 0 0 5px white;
-    box-shadow: 0 0 15px #0112ff;
-    transform: scale(1.01);
-}
-
-.divider {
-    margin: 20px 0;
-    position: relative;
-}
-
-.divider::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: #525252;
-    z-index: 1;
-}
-
-.divider span {
-    background: var(--form-color);
-    padding: 0 10px;
-    color: #525252;
-    font-size: 14px;
-    position: relative;
-    z-index: 2;
-}
-
-.btn-guest {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    color: #0112ff;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 1px solid #0112ff;
-    font-weight: bold;
-    font-size: 14px;
-    transition: 0.3s;
-}
+    .btn-guest {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        color: #0112ff;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 1px solid #0112ff;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.3s;
+    }
 
 
-.btn-guest:hover{
-    color: white;
-    background-color: #0112ff;
-    box-shadow: 0 0 25px #0112ff;
-    
-    
-}
+    .btn-guest:hover{
+        color: white;
+        background-color: #0112ff;
+        box-shadow: 0 0 25px #0112ff;    
+    }
     </style>
 </head>
 <body> 
